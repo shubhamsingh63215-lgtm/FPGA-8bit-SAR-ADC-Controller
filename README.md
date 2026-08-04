@@ -35,7 +35,8 @@
   <li>Uses precomputed output codes because real-valued analog models cannot be synthesized directly into FPGA logic.</li>
 </ul>
 
-<p><strong>[!IMPORTANT]</strong> The FPGA demonstrator is a digital hardware demonstration of the SAR conversion results. It is not a complete physical mixed-signal ADC because the current board implementation does not include an actual analog front-end.</p>
+<p><strong>[!IMPORTANT]</strong> The FPGA demonstrator is a digital hardware demonstration of the SAR conversion results. It is not a complete physical mixed-signal ADC because the current board i[...]
+</p>
 
 <h2 style="font-size:22px"><strong>Project Objectives</strong></h2>
 
@@ -108,6 +109,25 @@ flowchart LR
   <li>Levels = 256</li>
   <li>LSB = 16 / 256 = 0.0625 V</li>
 </ul>
+
+<h2 style="font-size:22px"><strong>Block Diagram</strong></h2>
+
+<p>The block diagram below summarizes the main functional blocks and signal flow of the SAR ADC project. The diagram image is included in the repository at <code>images/sar_adc_block_diagram.png</code>. A brief description of each block follows.</p>
+
+<p align="center">
+  <img alt="SAR ADC Block Diagram" src="images/sar_adc_block_diagram.png" />
+</p>
+
+<ul>
+  <li><strong>Analog Input (Vin)</strong> — The analog signal to be converted by the SAR ADC.</li>
+  <li><strong>Sample-and-Hold (S/H)</strong> — Captures and holds Vin during the conversion period (behavioral model used in simulation).</li>
+  <li><strong>Digital-to-Analog Converter (DAC)</strong> — Ideal 8-bit DAC model that converts the trial digital code proposed by the SAR controller into a comparison voltage.</li>
+  <li><strong>Comparator</strong> — Compares the held analog input to the DAC output and outputs a binary decision (Vin &gt;= Vdac).</li>
+  <li><strong>SAR Controller (FSM)</strong> — Implements the MSB-to-LSB binary search algorithm; it updates the trial code based on comparator results and asserts a done signal when the final code is ready.</li>
+  <li><strong>Digital Output</strong> — The final 8-bit digital code, visible in simulation waveforms or presented by the FPGA demonstrator using precomputed codes and LED/nibble display.</li>
+</ul>
+
+<p>This block diagram provides a high-level view of how the behavioral models (S/H, DAC, comparator) interact with the synthesizable SAR controller to produce a final digital result.</p>
 
 <h2 style="font-size:22px"><strong>Design Organization</strong></h2>
 
@@ -362,7 +382,7 @@ flowchart LR
 
 <h2 style="font-size:22px"><strong>Documentation</strong></h2>
 
-<p>Detailed design theory, calculations, module descriptions, waveform analysis, FPGA implementation steps, and source-code appendices are provided in the project report under the docs/ directory (docs/SAR_ADC_Project_Report.pdf, docs/SAR_ADC_Project_Presentation.pdf).</p>
+<p>Detailed design theory, calculations, module descriptions, waveform analysis, FPGA implementation steps, and source-code appendices are provided in the project report under the docs/ directory (doc[...]</p>
 
 <h2 style="font-size:22px"><strong>Authors</strong></h2>
 
