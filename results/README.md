@@ -404,6 +404,10 @@ Waveform screenshots, RTL schematics, implementation screenshots, and hardware p
 
 ## 17. Final Result
 
+<img width="1000" height="644" alt="image" src="https://github.com/user-attachments/assets/1231f0db-2799-4714-8075-fcebc507b7a1" />
+
+<img width="1004" height="625" alt="image" src="https://github.com/user-attachments/assets/a1452428-c4d4-4725-8e7a-715d66f794eb" />
+
 The project successfully demonstrates:
 
 - Correct 8-bit SAR binary-search behavior in behavioral simulation
