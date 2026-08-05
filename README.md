@@ -366,16 +366,6 @@ flowchart LR
   <li>FPGA device programmed through Hardware Manager</li>
 </ul>
 
-<h2 style="font-size:22px"><strong>Limitations</strong></h2>
-
-<ul>
-  <li>SystemVerilog real signals are simulation-only and cannot be synthesized into FPGA logic.</li>
-  <li>The current FPGA demonstrator uses precomputed conversion codes rather than a real analog input.</li>
-  <li>No external sample-and-hold, DAC, or comparator is connected.</li>
-  <li>The current output interface displays only four bits at a time.</li>
-  <li>Button inputs are not debounced or synchronized for production-grade interface.</li>
-</ul>
-
 <h2 style="font-size:22px"><strong>Future Improvements</strong></h2>
 
 <ul>
