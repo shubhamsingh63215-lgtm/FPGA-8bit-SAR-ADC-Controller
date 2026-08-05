@@ -2,6 +2,10 @@
 
 This folder contains the SystemVerilog source code for the 8-bit SAR ADC Controller.
 
+Notes:
+- The source files have been reformatted for consistent indentation and clearer comments.
+- "Increase the font size" is a display/editor setting and cannot be changed inside these plain text files. To view with a larger font, adjust your editor or browser zoom (e.g., Ctrl+Plus or View → Zoom).
+
 ## Files
 
 - `sar_controller.sv` – Successive Approximation Register (SAR) control logic
