@@ -388,20 +388,9 @@ flowchart LR
   <li>Integrate the Zynq XADC for comparison with the custom SAR controller.</li>
 </ul>
 
-<h2 style="font-size:22px"><strong>Documentation</strong></h2>
-
-<p>Detailed design theory, calculations, module descriptions, waveform analysis, FPGA implementation steps, and source-code appendices are provided in the project report under the docs/ directory (doc[...]</p>
-
 <h2 style="font-size:22px"><strong>Authors</strong></h2>
 
 <p>Shubham Singh &amp; Jayant Punj<br>
 Department of Electronics and Communication Engineering<br>
 University Institute of Engineering and Technology, Panjab University, Chandigarh</p>
 
-<h2 style="font-size:22px"><strong>License</strong></h2>
-
-<p>This project is released under the MIT License. See the LICENSE file for details.</p>
-
-<h2 style="font-size:22px"><strong>Acknowledgements</strong></h2>
-
-<p>This project was developed using the AMD/Xilinx Vivado Design Suite and the PYNQ-Z2 development board as part of an Electronics and Communication Engineering FPGA design project.</p>
