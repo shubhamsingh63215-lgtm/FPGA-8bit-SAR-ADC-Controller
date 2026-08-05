@@ -115,7 +115,8 @@ flowchart LR
 <p>The block diagram below summarizes the main functional blocks and signal flow of the SAR ADC project. The diagram image is included in the repository at <code>images/sar_adc_block_diagram.png</code>. A brief description of each block follows.</p>
 
 <p align="center">
-  <img alt="SAR ADC Block Diagram" src="images/sar_adc_block_diagram.png" />
+<img width="612" height="370" alt="Picture1" src="https://github.com/user-attachments/assets/dde7863a-db5f-4601-874d-4b1e33bdda31" />
+
 </p>
 
 <ul>
