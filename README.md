@@ -249,11 +249,18 @@ FPGA-8bit-SAR-ADC-Controller/
 
 <p>Expected code: D = floor(11.2 / 0.0625) = 179 → Binary = 10110011 (0xB3)</p>
 
+
+<img width="1004" height="625" alt="image" src="https://github.com/user-attachments/assets/d1d24eb5-c37c-4bdd-82ef-da1b39ad8940" />
+
+
 <h3 style="font-size:18px"><strong>Test Case 2</strong></h3>
 
 <p>Vin = 6.5 V, Vref = 16 V</p>
 
 <p>Result: Binary = 01101000 (0x68) → Decimal = 104 → Reconstructed voltage = 6.5 V</p>
+
+<img width="1000" height="644" alt="image" src="https://github.com/user-attachments/assets/e29ba84f-3d74-4bca-bff9-7c442f340cff" />
+
 
 <h2 style="font-size:22px"><strong>Results Summary</strong></h2>
 
